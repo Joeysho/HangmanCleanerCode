@@ -1,0 +1,2 @@
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\publish\Hangman.pdb
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\publish\Hangman.exe

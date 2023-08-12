@@ -1,0 +1,16 @@
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\Hangman.exe
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\Hangman.deps.json
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\Hangman.runtimeconfig.json
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\Hangman.runtimeconfig.dev.json
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\Hangman.dll
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\bin\Debug\net5.0\win-x64\Hangman.pdb
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.csproj.AssemblyReference.cache
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.AssemblyInfoInputs.cache
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.AssemblyInfo.cs
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.csproj.CoreCompileInputs.cache
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.dll
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\refint\Hangman.dll
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.pdb
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\Hangman.genruntimeconfig.cache
+C:\Users\ishoj\OneDrive\Desktop\Hangman-master\obj\Debug\net5.0\win-x64\ref\Hangman.dll
