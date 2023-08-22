@@ -8,7 +8,7 @@ namespace Hangman
 {
     public static class Design
     {
-        private static string template = string.Format(@"              _____________
+        private static string _template = string.Format(@"              _____________
               |           |
               |           |
                           |
@@ -17,37 +17,33 @@ namespace Hangman
                           |
                           |
                ___________|_______");
-        private static string underscores = "";
-        public static string GetTemplate()
+        private static string _underscores = "";
+
+        public static string Template { get { return _template; } set { _template = value; } }
+        public static string  Underscores
         {
-            return template;
-        }
-        public static void SetTemplate(string template)
-        {
-            Design.template = template;
-        }
-        public static string GetUnderscores()
-        {
-            return underscores;
-        }
-        public static void SetUnderScores(string underscore)
-        {
-            if (underscore == "_")
+            get 
             {
-                underscores += underscore;
-            }
-            else
+                return _underscores; 
+            } set
             {
-                underscores = underscore;
-            }
+                if (value == "_")
+                {
+                    _underscores += value;
+                }
+                else
+                {
+                    _underscores = value;
+                }
+            } 
         }
         public static void Results()
         {
             Console.Clear();
 
-            Console.Write(GetTemplate() + "\t");
+            Console.Write(Template + "\t");
 
-            foreach (char c in underscores)
+            foreach (char c in _underscores)
             {
                 Console.Write(c + " ");
             }
@@ -58,7 +54,7 @@ namespace Hangman
         {
             Console.Clear();
 
-            switch (Guess.GetIncorrectGuess())
+            switch (Guess.GuessedIncorrectly)
             {
                 case 1:
                     AddBodyPart.Head();
@@ -81,7 +77,7 @@ namespace Hangman
 
             }
 
-            foreach (char c in Design.GetUnderscores())
+            foreach (char c in Underscores)
             {
                 Console.Write(c + " ");
             }

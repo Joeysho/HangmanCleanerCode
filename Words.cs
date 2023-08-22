@@ -22,9 +22,9 @@ namespace Hangman
         public static void ListOfUsedChars()
         {
             Console.Write("\tIncorrect guesses: ");
-            for (int i = 0; i < Guess.GetIncorrectGuessList().Count; i++)
+            for (int i = 0; i < Guess.GuessedIncorrectLetters.Count; i++)
             {
-                Console.Write(" " + Guess.GetIncorrectGuessList()[i]);
+                Console.Write(" " + Guess.GuessedIncorrectLetters[i]);
             }
         }
     }

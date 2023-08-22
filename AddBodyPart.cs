@@ -10,7 +10,7 @@ namespace Hangman
     {
         public static void Head()
         {
-            Design.SetTemplate(@"              _____________
+            Design.Template = @"              _____________
               |           |
               |           |
               O           |
@@ -18,12 +18,12 @@ namespace Hangman
                           |
                           |
                           |
-               ___________|_______");
-            Console.Write(Design.GetTemplate() + "\t");
+               ___________|_______";
+            Console.Write(Design.Template + "\t");
         }
         public static void Body()
         {
-            Design.SetTemplate(@"              _____________
+            Design.Template = @"              _____________
               |           |
               |           |
               O           |
@@ -31,12 +31,12 @@ namespace Hangman
                           |
                           |
                           |
-               ___________|_______");
-            Console.Write(Design.GetTemplate() + "\t");
+               ___________|_______";
+            Console.Write(Design.Template + "\t");
         }
         public static void LeftArm()
         {
-            Design.SetTemplate(@"              _____________
+            Design.Template = @"              _____________
               |           |
               |           |
               O           |
@@ -44,12 +44,12 @@ namespace Hangman
                           |
                           |
                           |
-               ___________|_______");
-            Console.Write(Design.GetTemplate() + "\t");
+               ___________|_______";
+            Console.Write(Design.Template + "\t");
         }
         public static void RightArm()
         {
-            Design.SetTemplate(@"              _____________
+            Design.Template = @"              _____________
               |           |
               |           |
               O           |
@@ -57,12 +57,12 @@ namespace Hangman
                           |
                           |
                           |
-               ___________|_______");
-            Console.Write(Design.GetTemplate() + "\t");
+               ___________|_______";
+            Console.Write(Design.Template + "\t");
         }
         public static void LeftLeg()
         {
-            Design.SetTemplate(@"              _____________
+            Design.Template = @"              _____________
               |           |
               |           |
               O           |
@@ -70,12 +70,12 @@ namespace Hangman
              /            |
                           |
                           |
-               ___________|_______");
-            Console.Write(Design.GetTemplate() + "\t");
+               ___________|_______";
+            Console.Write(Design.Template + "\t");
         }
         public static void RightLeg()
         {
-            Design.SetTemplate(@"              _____________
+            Design.Template = @"              _____________
               |           |
               |           |
               O           |
@@ -83,8 +83,8 @@ namespace Hangman
              / \          |
                           |
                           |
-               ___________|_______");
-            Console.Write(Design.GetTemplate() + "\t");
+               ___________|_______";
+            Console.Write(Design.Template + "\t");
         }
 
     }

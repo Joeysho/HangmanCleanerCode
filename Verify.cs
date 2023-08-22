@@ -22,9 +22,9 @@ namespace Hangman
             temp = Char.ToLower(temp);
 
             //check if letter has already been guessed
-            for (int i = 0; i < Guess.GetGuessedLetters().Count; i++)
+            for (int i = 0; i < Guess.GuessedLetters.Count; i++)
             {
-                while (Guess.GetGuessedLetters()[i] == temp)
+                while (Guess.GuessedLetters[i] == temp)
                 {
                     Console.WriteLine("Letter already guessed! ");
                     Console.Write("Enter a different letter: ");
@@ -42,23 +42,23 @@ namespace Hangman
             }
 
             temp = Char.ToLower(temp);
-            Guess.SetGuess(temp);
-            return Guess.GetGuess();
+            Guess.guess = temp;
+            return Guess.guess;
         }
         public static void Underscores()
         {
             foreach (char c in Words.GetKeyWord())
             {
-                Design.SetUnderScores("_");
+                Design.Underscores = "_";
             }
             // Display the results
             Design.Results();
         }
         public static void GameResults()
         {
-            if (Guess.GetIncorrectGuess() < 6)
+            if (Guess.GuessedIncorrectly < 6)
                 Console.WriteLine("\n\n\t\t    YOU WIN!");
-            else if (Design.GetUnderscores().Contains("_"))
+            else if (Design.Underscores.Contains("_"))
             {
                 Console.WriteLine("\n\n\t\t    YOU LOSE!");
                 Console.WriteLine($"\nTHe word was {Words.GetKeyWord()}");
@@ -66,7 +66,7 @@ namespace Hangman
         }
         public static void Logic()
         {
-            while (Guess.GetIncorrectGuess() < 6 && Design.GetUnderscores().Contains("_"))
+            while (Guess.GuessedIncorrectly < 6 && Design.Underscores.Contains("_"))
             {
                 int guessedCorrectly = 0;
                 // verify character guessed
@@ -76,19 +76,19 @@ namespace Hangman
                 for (int i = 0; i < Words.GetKeyWord().Length; i++)
                 {
 
-                    if (Words.GetKeyWord()[i] == Guess.GetGuess())
+                    if (Words.GetKeyWord()[i] == Guess.guess)
                     {
-                        Design.SetUnderScores(Design.RemoveChar(Design.GetUnderscores(), i));
-                        Design.SetUnderScores(Design.GetUnderscores().Insert(i, Guess.GetGuess().ToString()));
+                        Design.Underscores = Design.RemoveChar(Design.Underscores, i);
+                        Design.Underscores = Design.Underscores.Insert(i, Guess.guess.ToString());
                         guessedCorrectly++;
-                        Guess.GetGuessedLetters().Add(Guess.GetGuess());
+                        Guess.GuessedLetters.Add(Guess.guess);
                         Design.Results();
                     }
                     else if (guessedCorrectly == 0 && i == Words.GetKeyWord().Length - 1)
                     {
-                        Guess.SetIncorrectGuess(1);
-                        Guess.GetGuessedLetters().Add(Guess.GetGuess());
-                        Guess.GetIncorrectGuessList().Add(Guess.GetGuess());
+                        Guess.GuessedIncorrectly = 1;
+                        Guess.GuessedLetters.Add(Guess.guess);
+                        Guess.GuessedIncorrectLetters.Add(Guess.guess);
                         Design.HangmanAddBodyParts();
                     }
 
